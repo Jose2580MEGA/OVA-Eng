@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contenido H5P</title>
+    <script src="FillBlanks.h5p"></script>
+</head>
+<body>
+    <div id="h5p-container"></div>
+    <button onclick="window.location.href='otra_pagina.html'">Ir a Otra Página</button>
+    <script>
+        H5PFrontend.instances = [];
+        H5PFrontend.instances.push(new H5P.Standalone(jQuery('#h5p-container'), {
+            frame: {
+                width: 800,
+                height: 600
+            },
+            h5p: {
+                src: 'contenido.h5p',  // Nombre del archivo H5P
+                l10n: {
+                    key: 'es',
+                    dir: 'ltr'
+                }
+            }
+        }));
+    </script>
+</body>
+</html>
