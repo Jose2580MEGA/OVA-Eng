@@ -11,7 +11,7 @@
     <br>
     <h1>Actividades</h1>
     <br>
-    <button type="button" class="btn btn-outline-primary my-button" onclick="Act1()">
+    <button type="button" class="btn btn-outline-primary my-button" onclick="window.location.href='FillBlanks.html'">
         <i class="material-icons">add_task</i> Actividad 1
     </button>
     <br>
@@ -24,5 +24,11 @@
     <button type="button" class="btn btn-outline-primary my-button"  onclick="Act3()">
         <i class="material-icons">add_task</i> Actividad 3
     </button>
+
+    <script>
+        function Act1() {
+            document.getElementById('zona-contenido').src = 'Hogar.html';
+        }
+    </script>
 </body>
 </html>
