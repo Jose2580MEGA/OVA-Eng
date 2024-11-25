@@ -22,21 +22,26 @@
             <i class="material-icons">book</i> Contenidos
         </button>
         <button type="button" class="btn btn-outline-primary my-button"  onclick="mostrarActividades()">
-            <i class="material-icons">add_task</i>Actividades
+            <i class="material-icons">add_task</i> Actividades
         </button>
         <button type="button" class="btn btn-outline-primary my-button"  onclick="mostrarExamen()">
             <i class="material-icons">psychology</i>Examen
+        </button>
+        <button type="button" class="btn btn-outline-primary my-button"  onclick="mostrarCreditos()">
+            <i class="material-icons">groups</i> Creditos
         </button>
     </aside>
     
     <main>
         <iframe id="zona-contenido" src="Hogar.html"></iframe>
     </main>
-    <footer class="blockquote-footer">English is easy to learn according to <cite title="Source Title">Source Title</cite></footer>
+    <footer class="blockquote-footer">Proyecto de la <cite title="Source Title">Universidad de Córdoba</cite>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Escudo_Universidad_de_C%C3%B3rdoba.png" alt="Unicor" class="imagendepie">
+    </footer>
 
     <script>
-        function mostrarHogar() {
-            document.getElementById('zona-contenido').src = 'Hogar.html';
+        function mostrarCreditos() {
+            document.getElementById('zona-contenido').src = 'Creditos.html';
         }
         
         function mostrarContenido() {
